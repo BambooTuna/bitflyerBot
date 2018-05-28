@@ -1,0 +1,27 @@
+{
+  "name": "bitflyerbotsample",
+  "version": "1.0.0",
+  "description": "概要 nodejsを使ってbotを作ろうと思っている方の参考になれればと思い、またその道のプロの方でこれ以上にいいコードがありますよ！という意見などあったらそれを吸収して行きたいという意図であげました。",
+  "main": "./bot/spread/bot.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "mysql": "^2.15.0",
+    "node-uuid": "^1.4.8",
+    "request": "^2.87.0",
+    "rpc-websockets": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BambooTuna/bitflyerBot.git"
+  },
+  "author": "takeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BambooTuna/bitflyerBot/issues"
+  },
+  "homepage": "https://github.com/BambooTuna/bitflyerBot#readme"
+}
