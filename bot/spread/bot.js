@@ -81,8 +81,8 @@ let main = async function () {
     ///////////////////////////
     //注文処理
     ///////////////////////////
-    let sellOrder = ["LIMIT", "SELL", best_ask - 10000, lot];
-    let buyOrder = ["LIMIT", "BUY", best_bid + 10000, lot];
+    let sellOrder = ["LIMIT", "SELL", best_ask - 1, lot];
+    let buyOrder = ["LIMIT", "BUY", best_bid + 1, lot];
     console.log("注文開始...")
     let [sellData, buyData] = await Promise.all([bitflyer.simpleOrder(sellOrder), bitflyer.simpleOrder(buyOrder)]);
     console.log("売り注文ID：", bitflyer.jsonParse(sellData));
