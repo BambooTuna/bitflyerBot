@@ -1,6 +1,16 @@
 
+///////////////////////////
+//ユーザー設定
+///////////////////////////
+var priceRange = 950;
+var lot = 0.01;
+var intervalTime = 5 * 1000;
+
 const key = "";
 const secret = "";
+
+
+
 const BitFlyer = require('../../my_modules/bf.js');
 const bitflyer = new BitFlyer(key, secret);
 
@@ -11,12 +21,9 @@ const ticker = new Ticker();
 let main = async function () {
   console.log("start main");
 
-
-  var priceRange = 950;
-  var lot = 0.01;
-
-  var intervalTime = 5 * 1000;
-  var positionData = {size:0, side:null};
+  ///////////////////////////
+  //プロダクトコード取得
+  ///////////////////////////
   /*
   //四半期先物　プロダクトコード取得
   console.log("四半期先物　プロダクトコード取得...");
@@ -49,6 +56,7 @@ let main = async function () {
   }
   console.log("--------------------");
 
+  var positionData = {size:0, side:null};
   ticker.renewCallBack = async (datas) => {
     ///////////////////////////
     //初期値設定
